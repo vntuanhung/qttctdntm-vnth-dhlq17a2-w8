@@ -83,7 +83,7 @@ td.n{text-align:right;white-space:nowrap}
 </main>
 <div class="bar" id="bar" style="display:none"><span class="tm" id="tm"></span><span id="st"></span><button class="w" id="save">Lưu bài</button><button id="sub">Nộp bài</button></div>
 <script>
-var ENDPOINT="https://script.google.com/macros/s/AKfycbyW0Ms4tTD8q8J4YVrZqwm6uW1YHjqaI3u2ov8EgKYV_chYbwCmzWGOv_NOggBHeeCcJg/exec";
+var ENDPOINT="https://script.google.com/macros/s/AKfycbyozaagM9YFcLSJfp57iOh2QHO15xLp7chiPJkFGljAQsCfi-48dVhPsrNzqnZaxx-xOw/exec";
 function api(action,p){
  if(ENDPOINT.indexOf('http')!==0)return Promise.reject(new Error('no endpoint'));
  if(action==='config')return fetch(ENDPOINT+'?action=config').then(function(r){return r.json();});
